@@ -35,7 +35,7 @@ A modern, feature-rich mobile finance application built with React Native and Ex
 1. Clone the repository:
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/TheWiki2306/Innotech-finance.git
    cd innotech-finance
    ```
 
