@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import { StyleProp, ViewStyle, TextStyle, TextInputProps } from 'react-native';
+import { StyleProp, ViewStyle } from 'react-native';
 
 export interface BaseComponentProps {
   children?: ReactNode;

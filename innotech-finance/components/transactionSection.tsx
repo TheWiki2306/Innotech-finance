@@ -36,7 +36,6 @@ const TransactionSection = () => {
   const [selectedWallet, setSelectedWallet] = useState<string | null>(null);
 
   const handleContinue = () => {
-    // Handle continue action
     console.log('Selected wallet:', selectedWallet);
     setShowDespositBottomSheet(false);
     setShowTransferBottomSheet(false);

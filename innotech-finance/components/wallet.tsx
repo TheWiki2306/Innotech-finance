@@ -89,9 +89,9 @@ const Wallet = () => {
             <Text style={styles.fundButtonText}>Fund Wallet</Text>
           </TouchableOpacity>
         </View>
-        {/* <View style={styles.lineSeparatorWrapper}>
+        <View style={styles.lineSeparatorWrapper}>
           <View style={styles.lineSeparator} />
-        </View> */}
+        </View>
         <View style={styles.transactionsHeader}>
           <Text style={styles.transactionsTitle}>Recent transactions</Text>
           <TouchableOpacity>
@@ -361,7 +361,7 @@ const styles = StyleSheet.create({
   actionButtonsContainer: {
     flexDirection: 'row',
     gap: 12,
-    marginBottom: 30,
+    // marginBottom: 30,
   },
   sendButton: {
     flex: 1,

@@ -41,10 +41,10 @@ const styles = StyleSheet.create({
     shadowColor: colors.accent,
     shadowOffset: {
       width: 0,
-      height: 0, // Centered shadow (no offset)
+      height: 0,
     },
     shadowOpacity: 0.08,
-    shadowRadius: 12, // Spreads evenly around all sides
+    shadowRadius: 12,
     // Android shadow
     elevation: 4,
   },

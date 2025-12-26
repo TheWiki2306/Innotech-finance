@@ -5,7 +5,6 @@ import {
   FlatList,
   NativeScrollEvent,
   NativeSyntheticEvent,
-  Dimensions,
   ViewToken,
 } from 'react-native';
 import { Image } from 'expo-image';
@@ -16,7 +15,7 @@ const CARD_WIDTH = 360;
 
 export interface SlideItem {
   id: string | number;
-  image: ImageSourcePropType; // Image source (require() or URL)
+  image: ImageSourcePropType;
   title?: string;
   subtitle?: string;
   onPress?: () => void;
@@ -41,7 +40,7 @@ export const CardSlide: React.FC<CardSlideProps> = ({
 }) => {
   const flatListRef = useRef<FlatList>(null);
   const [activeIndex, setActiveIndex] = useState(0);
-  const autoPlayTimerRef = useRef<NodeJS.Timeout | null>(null);
+  const autoPlayTimerRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
   const onScroll = useCallback(
     (event: NativeSyntheticEvent<NativeScrollEvent>) => {
